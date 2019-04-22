@@ -2,10 +2,9 @@
 
 // 0. publish to npm ✅
 // NOTE: successfully published `dist/lib.js`
-// 0a. write a post install script that generates a config file in the root project...?
+// 0a. write a post install script that generates a config file in the root project...? ✅
 
 // src = index
-
 // dist = lib, post-install script...
 
 
