@@ -1,10 +1,10 @@
-# Gulp Caddy
-
-![Gulp Caddy logo thingy](GulpCaddy.png)
+![Gulp Caddy](GulpCaddy.png)
 
 Requireable task runners. Get up and running with building files a little quicker. 
 
 Minimal config, but fairly opinionated. 
+
+# Gulp Caddy
 
 ## Contributing
 
@@ -23,7 +23,7 @@ See also the list of [contributors](https://github.com/miclgael/gulp-caddy/contr
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the (https://github.com/miclgael/gulp-caddy/blob/master/LICENCE)[LICENCE] file for details
 
 ## Acknowledgments
 

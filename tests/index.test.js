@@ -7,3 +7,7 @@ it("installed Jest correctly", () => {
 it("installed Gulp correctly", () => {
   expect(gulp).toBeDefined()
 })
+
+it("can define tasks", () => {
+  expect(gulp.task).toBeDefined()
+})

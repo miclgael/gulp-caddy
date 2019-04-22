@@ -1,15 +1,30 @@
 {
   "name": "gulp-caddy",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "requireable task runners",
-  "main": "index.js",
+  "main": "dist/lib.js",
   "directories": {
     "test": "tests"
   },
+  "files": [
+    "dist/lib.js"
+  ],
   "scripts": {
-    "test": "jest --watchAll"
+    "lint": "",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "build": "",
+    "prepublish": "npm run lint && npm run test && npm run build"
   },
-  "author": "Michael Gale <michael@michaelgale.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/miclgael/gulp-caddy.git"
+  },
+  "author": {
+    "name": "Michael Gale",
+    "email": "michael@michaelgale.dev",
+    "url": "https://www.michaelmakeswebsites.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "jest": "^24.7.1"
