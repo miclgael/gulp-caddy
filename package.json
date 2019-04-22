@@ -15,7 +15,7 @@
     "test:watch": "jest --watchAll",
     "build": "",
     "prepublish": "npm run lint && npm run test && npm run build",
-    "postinstall": "node ./dist/postinstall.js"
+    "gulp-caddy:install": "node ./dist/postinstall.js"
   },
   "repository": {
     "type": "git",
