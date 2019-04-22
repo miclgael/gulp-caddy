@@ -1,0 +1,20 @@
+{
+  "name": "gulp-caddy",
+  "version": "0.1.0",
+  "description": "requireable task runners",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Michael Gale <michael@michaelgale.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.1"
+  }
+}
