@@ -1,13 +1,14 @@
 {
   "name": "gulp-caddy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "requireable task runners",
   "main": "dist/lib.js",
   "directories": {
     "test": "tests"
   },
   "files": [
-    "dist/lib.js"
+    "dist/lib.js",
+    "dist/postinstall.js"
   ],
   "scripts": {
     "lint": "",
@@ -15,7 +16,7 @@
     "test:watch": "jest --watchAll",
     "build": "",
     "prepublish": "npm run lint && npm run test && npm run build",
-    "gulp-caddy:install": "node ./dist/postinstall.js"
+    "postinstall": "node ./dist/postinstall.js"
   },
   "repository": {
     "type": "git",
