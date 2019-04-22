@@ -15,3 +15,7 @@ it("can define tasks", () => {
 it("builds to /dist/ folder", () => {
   expect(require('../dist/lib.js')).toBeDefined()
 })
+
+it("finds post install script", () => {
+  expect(require('../dist/postinstall.js')).toBeDefined()
+})
