@@ -11,3 +11,7 @@ it("installed Gulp correctly", () => {
 it("can define tasks", () => {
   expect(gulp.task).toBeDefined()
 })
+
+it("builds to /dist/ folder", () => {
+  expect(require('../dist/lib.js')).toBeDefined()
+})

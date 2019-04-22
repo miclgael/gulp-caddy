@@ -23,7 +23,7 @@ See also the list of [contributors](https://github.com/miclgael/gulp-caddy/contr
 
 ## License
 
-This project is licensed under the MIT License - see the (https://github.com/miclgael/gulp-caddy/blob/master/LICENCE)[LICENCE] file for details
+This project is licensed under the MIT License - see the [LICENCE](https://github.com/miclgael/gulp-caddy/blob/master/LICENCE) file for details
 
 ## Acknowledgments
 
