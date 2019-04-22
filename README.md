@@ -32,7 +32,7 @@ This project is licensed under the MIT License - see the [LICENCE](https://githu
 
 ## ROADMAP
 
-- [ ] ultimately, it would be nice to npm install, then require as a dependency to use.
-- [ ] get all of those dependencies out of the root project's `package.json`
+- [x] ultimately, it would be nice to npm install, then require as a dependency to use.
+- [x] get all of those dependencies out of the root project's `package.json`
 - [ ] modularize all the pieces of the gulp file. 
 - [ ] gulp-caddy.config file to alter options from the root of the project

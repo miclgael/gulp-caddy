@@ -1,4 +1,4 @@
-const gulp = require('gulp')
+const gulp = require('gulp');
 
 it("installed Jest correctly", () => {
   expect(true).toEqual(true)
@@ -16,6 +16,6 @@ it("builds to /dist/ folder", () => {
   expect(require('../dist/lib.js')).toBeDefined()
 })
 
-it("finds post install script", () => {
-  expect(require('../dist/postinstall.js')).toBeDefined()
+it("defines postinstall script", () => {
+  expect('../dist/postinstall.js').toBeDefined()
 })
