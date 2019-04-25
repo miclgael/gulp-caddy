@@ -1,6 +1,7 @@
-const fs = require('fs')
 const path = require('path')
 const appDir = path.dirname('../../..') // The user's app directory
+
+const writeFile = require('../src/partials/utils');
 
 const defaultOptions = `
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
     reload: true
   },
   // Specify paths to your assets!
-  paths = {
+  paths: {
     input: 'src/',
     output: 'dist/',
     scripts: {
@@ -39,16 +40,5 @@ module.exports = {
     }
 }`;
 
-fs.writeFile(`${appDir}/caddy.config.js`, defaultOptions, function(err) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(`config file saved to ${appDir}`);
-});
-
-fs.writeFile(`${appDir}/gulpfile.caddy.js`, `/* Rename this file to "gulpfile.js" if safe to do so */\nconst caddy = require('gulp-caddy')`, function(err) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(`gulpfile saved to ${appDir}`);
-});
+writeFile(appDir,'caddy.config.js', defaultOptions);
+writeFile(appDir,'gulpfile.js', `const caddy = require('gulp-caddy')`);

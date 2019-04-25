@@ -1,4 +1,6 @@
 const gulp = require('gulp');
+const fs = require('fs');
+const writeFile = require('../src/partials/utils');
 
 it("installed Jest correctly", () => {
   expect(true).toEqual(true)
@@ -17,5 +19,25 @@ it("builds to /dist/ folder", () => {
 })
 
 it("defines postinstall script", () => {
-  expect('../dist/postinstall.js').toBeDefined()
+  expect(require('../dist/postinstall.js')).toBeDefined()
+})
+
+it("writes a file", () => {
+
+  // 1. Write a temp file
+  writeFile('./','temp.txt', 'Hello, world!');
+  
+  // 2. Read from file, await callback
+  fs.readFile('./temp.txt', data => processFile(data));
+  
+  // 3. 
+  processFile = (data) => {
+    expect(data).toBe('Hello, world!');
+  };
+
+  // 4. remove the file
+  fs.unlink('./temp.txt', err => {
+    if (err) throw err
+  });
+  
 })
