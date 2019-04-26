@@ -12,8 +12,8 @@ const appDir = path.dirname('../../..')
 const {
   settings,
   paths
-} = require(`../../../caddy.config.js`) // this will probably break everything.
-const pack = require(`../../../package.json`); // package = reserved word
+} = require(`${appDir}/caddy.config.js`) // this will probably break everything.
+const pack = require(`${appDir}/package.json`); // package = reserved word
 
 /* Packages here! */
 

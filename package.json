@@ -8,13 +8,14 @@
   },
   "files": [
     "dist/lib.js",
-    "dist/postinstall.js"
+    "dist/postinstall.js",
+    "dist/utils.writeFile.js"
   ],
   "scripts": {
     "lint": "",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "build": "",
+    "build": "node ./src/utils/utils.build.js",
     "prepublish": "npm run lint && npm run test && npm run build",
     "postinstall": "node ./dist/postinstall.js"
   },
@@ -29,12 +30,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "gulp": "^4.0.1"
   },
   "dependencies": {
     "browser-sync": "^2.26.4",
     "del": "3.0.0",
-    "gulp": "^4.0.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-concat": "2.6.1",
     "gulp-cssnano": "2.1.3",

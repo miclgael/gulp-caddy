@@ -3,8 +3,8 @@ const fs = require('fs');
 /**
  * Safely write file, by using an alternate name if the file already exists.
  * @param {String} filepath 
- * @param {String} filename 
- * @param {String} data  
+ * @param {String} filename
+ * @param {String} data
  * @param {Object || String} options 
  * @see https://stackoverflow.com/a/34187712
  */
@@ -26,7 +26,7 @@ module.exports = writeFile = (filepath, filename, data, options) => {
       const randomChars = Math.random().toString(36).replace(/[^0-z]+/g, '').substr(0, 6);
       
       // 3. Ready new data
-      data = `// ${filename} already existed. You may rename this file when safe to do so! */\n${data}`;
+      data = `// ${filename} already existed. You may rename this file when safe to do so!\n${data}`;
       filename = `${usefulFileParts}.${randomChars}.${extension}`;
       
       // 4. Re-run the function

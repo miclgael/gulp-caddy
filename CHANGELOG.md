@@ -1,6 +1,6 @@
-2.0.0
+0.0.xx
 
-- major rewrite. alot's changed in two years!
+- Time for a major rewrite. A lot has changed over the years!
 
 1.2.0
 
