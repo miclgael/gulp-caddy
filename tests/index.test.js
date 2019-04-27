@@ -14,31 +14,30 @@ it("can define tasks", () => {
   expect(gulp.task).toBeDefined()
 })
 
-// it("builds to /dist/ folder", () => {
-//   expect(require('../dist/lib.js')).toBeDefined()
-// })
+it("writes lib.js to /dist/", () => {
+  expect(fs.existsSync('./dist/lib.js')).toBe(true)
+})
 
-// it("defines postinstall script", () => {
-//   expect(require('../dist/postinstall.js')).toBeDefined()
-// })
+it("writes postinstall.js to /dist/", () => {
+  expect(fs.existsSync('./dist/postinstall.js')).toBe(true)
+})
 
-// it("writes a file", () => {
+it("writes a file", () => {
 
-//   // 1. Write a temp file
-//   writeFile('./','temp.txt', 'Hello, world!');
+  // 1. Write a temp file
+  writeFile('./','temp.txt', 'Hello, world!');
   
-//   // 2. Read from file, await callback
-//   fs.readFile('./temp.txt', data => processFile(data));
+  // 2. Read from file, await callback
+  fs.readFile('./temp.txt', data => processFile(data));
   
-//   // 3. Wait for file load complete.
-//   const processFile = (data) => {
-//     expect(data).toBe('Hello, world!');
-//   };
+  // 3. Wait for file load complete.
+  const processFile = (data) => {
+    expect(data).toBe('Hello, world!');
+  };
   
-//   // 4. remove the file
-//   fs.unlink('./temp.txt', err => {
-//     if (err) throw err
-//   });
+  // 4. remove the file
+  fs.unlink('./temp.txt', err => {
+    if (err) throw err
+  });
 
-// 
-// })
+})
