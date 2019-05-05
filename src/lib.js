@@ -129,7 +129,7 @@ const buildScripts = function (done) {
       if (file.isDirectory()) {
 
         // Setup a suffix constiable
-        const suffix = '';
+        let suffix = '';
 
         // If separate polyfill files enabled
         if (settings.polyfills) {
