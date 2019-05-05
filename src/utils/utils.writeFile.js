@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 /**
  * Safely write file, by using an alternate name if the file already exists.
  * @param {String} filepath 
@@ -10,12 +8,14 @@ const fs = require('fs');
  */
 module.exports = writeFile = (filepath, filename, data, options) => {
 
+  const fs = require('fs');
+
   // Default options. Only write if file !exists
   options = options || { flag: 'wx' };
 
   fs.writeFile(`${filepath}/${filename}`, `${data}`, options, (error) => {
     
-    if (error) {
+    if (error && error.code == 'EEXIST') {
       
       // 1. Handle file names like `foo.bar.baz.txt`
       const fragments = filename.split('.');
@@ -36,6 +36,6 @@ module.exports = writeFile = (filepath, filename, data, options) => {
       console.log(`${filename} saved to ${filepath}`);
     }
 
-  });
+  })
 
 }
