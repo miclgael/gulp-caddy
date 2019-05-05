@@ -1,6 +1,6 @@
 {
   "name": "gulp-caddy",
-  "version": "0.0.11",
+  "version": "0.0.12-alpha",
   "description": "requireable task runners",
   "main": "dist/lib.js",
   "directories": {
