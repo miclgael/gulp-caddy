@@ -1,5 +1,7 @@
 ![Gulp Caddy](GulpCaddy.png)
 
+> 💡 This repo is archived as of 2021-02-01 - what a wild ride. Please avoid using this software as there are security alerts from Dependabot that I don't have time to address. Leaving here in read-only mode.
+
 Requireable task runners. Get up and running with building files a little quicker. 
 
 Minimal config, but fairly opinionated. Uses *Gulp v4.x*
